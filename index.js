@@ -7,3 +7,7 @@ console.time("variable")
 const food2 = "Rice and beans"
 console.log(food2);
 console.timeEnd('variable')
+console.time("variable")
+const food3 = "Rice and beans"
+console.log(food3);
+console.timeEnd('variable')
