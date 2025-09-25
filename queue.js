@@ -9,26 +9,26 @@ class Queue {
     enqueue(item) {
         this.queue.push(item)
     }
-    // dequeue() {
-    //     this.queue.length === 0 ? console.log("the queue is empty, nothing to dequeue") : this.queue.shift();
+    dequeue() {
+        this.queue.length === 0 ? console.log("the queue is empty, nothing to dequeue") : this.queue.shift();
 
-    // }
-    // front() {
-    //     if (this.queue.length === 0) {
-    //         return "The queue is empty"
-    //     } else {
-    //         return this.queue.length === 1 ? "Only one item is in the queue" : this.queue[0]
-    //     }
-    // }
-    // end() {
-    //     if (this.queue.length === 0) {
-    //         return "The queue is empty"
-    //     }
-    //     else { return this.queue.length === 0 ? "Only one item is in the queue" : this.queue[this.queue.length - 1] }
-    // }
-    // isEmpty() {
-    //     return this.queue.length < 1 ? true : false
-    // }
+    }
+    front() {
+        if (this.queue.length === 0) {
+            return "The queue is empty"
+        } else {
+            return this.queue.length === 1 ? "Only one item is in the queue" : this.queue[0]
+        }
+    }
+    end() {
+        if (this.queue.length === 0) {
+            return "The queue is empty"
+        }
+        else { return this.queue.length === 0 ? "Only one item is in the queue" : this.queue[this.queue.length - 1] }
+    }
+    isEmpty() {
+        return this.queue.length < 1 ? true : false
+    }
 }
 const myQueue = new Queue()
 myQueue.enqueue("Weed");
